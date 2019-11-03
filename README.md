@@ -1,5 +1,7 @@
 # stocksorted
 
+www.stocksorted.com
+
 Overall Design of Yahoo Finance Data Scraper - Python
 
 
