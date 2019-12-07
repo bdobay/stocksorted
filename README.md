@@ -4,7 +4,8 @@ www.stocksorted.com
 
 Overall Design of Yahoo Finance Data Scraper - Python
 
-
-1. Using BeautifulSoup grab a Yahoo Finance stock url, parse into html tree, grab headings and values and put into dictionary
-2. Grab a url for the balance sheet and income statement for same stock, also parsing each url and putting heading and values into dictionaries. The dictionaries are then combined. 
-3. The data is then pushed into MYSQL server. 
+1. A file with all stock tickers, company name, company sector etc. is read and stored as dictionary. 
+2. 3 functions return the Yahoo Finance url of stock information page, profit and loss page, and balance sheet page. 
+3. BeautifulSoup parses each of the 3 urls for the data
+4. The data is then cleaned into correct format and placed into dictionary
+5. The data is inserted into a MYSQL database
